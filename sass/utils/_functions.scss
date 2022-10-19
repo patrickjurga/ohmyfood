@@ -1,0 +1,8 @@
+@function lightened($clr) {
+    $hue: hue($clr);
+    $sat: 100%;
+    $light: 70%;
+    $pastel: hsl($hue, $sat, $light);
+  
+    @return $lightened
+  }

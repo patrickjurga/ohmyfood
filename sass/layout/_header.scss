@@ -1,9 +1,14 @@
 .main-header {
 
+    margin-bottom: 4px;
+
+    @include box-shadow;
+
     .nav {
 
+
         &__link {
-            text-align: center;
+            @include text-align__center;
     
             &--logo {
                 margin-top: 0;
@@ -11,11 +16,26 @@
     
                 padding-top: 20px;
                 padding-bottom: 20px;
+
+                @include mobile-only {
+
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+
+                }
     
                 img {
                     width: 250px;
                     vertical-align: middle;
-                }
+
+                    @include mobile-only {
+
+                        width: 180px;
+    
+                    }
+
+                }  
+
             }
     
             .hidden {

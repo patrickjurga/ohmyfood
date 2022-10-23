@@ -3,7 +3,7 @@
     display: inline-block;
 
     background: linear-gradient(175deg, $secondary-color, $primary-color);
-    color: $button-color;
+    color: $white-color;
 
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
@@ -11,9 +11,13 @@
 
     border-radius: 40px;
 
-    transition: transform 300ms;
+    transition: all 0.3s;
+
+    
+
 
     &:hover {
+        background: linear-gradient(175deg, lightened($secondary-color, 75%), lightened($primary-color, 75%));
         transform: scale(1.02);
     }
 

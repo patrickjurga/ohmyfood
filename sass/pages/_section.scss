@@ -2,18 +2,288 @@
 
     background-color: $secondary-bg-color;
 
-    text-align: center;
+    @include text-align__center;
     
     padding-top: 20px;
     padding-bottom: 20px;
 
 }
 
+
+
 .section-explore {
+
     background-color: $primary-bg-color;
 
-    text-align: center;
+    @include text-align__center;
 
     padding: 20px;
-    padding-bottom: 40px;
+    
+    &__big-font {
+
+        font-size: 27px;
+        font-weight: bold;
+
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    &__link {
+
+        margin-top: 15px;
+        margin-bottom: 20px;
+
+    }
+
+    
+
+}
+
+.section-functioning {
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &__list {
+
+        display: flex;
+        justify-content: space-between;
+
+
+        list-style: none;
+
+        padding-left: 0;
+
+        @include mobile-only {
+
+            flex-direction: column;
+
+        }
+
+        @include tablette-only {
+
+            flex-direction: column;
+
+        }
+
+        .item {
+
+            width: 400px;
+            height: 80px;
+
+            border-radius: 20px;
+
+            display: flex;
+
+            @include box-shadow;
+
+            background-color: $primary-bg-color;
+
+            transition: all 0.3s;
+
+            @include desktop-only {
+
+                margin-left: 30px;
+
+            }
+
+           @include tablette-only {
+
+            width: 100%;
+
+            margin: 0 0 25px 10px;
+
+           }
+
+            &:hover {
+
+                background-color: lightened($primary-color, 96%);
+
+                transform: scale(1.02);
+                
+                .item__icon{
+                   
+                    color: $primary-color;
+                    
+                }
+
+            }
+
+            
+
+            &__number {
+
+                padding: 4px 10px;
+
+                border-radius: 50%;
+    
+                background-color: $primary-color;
+
+                margin: auto 10px auto -17px;
+
+                color: $white-color;
+                
+    
+            }
+
+            &__icon {
+                            
+                            
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-left: 15px;
+
+
+                color: $icon-color;
+                          
+            }
+
+            .icon-size1 {
+
+                font-size: 19px;
+
+            }
+
+            .icon-size2 {
+
+                font-size: 19px;
+
+            }
+
+            p {
+                
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-left: 7%;
+
+                font-weight: bold;
+
+                color: $black-color;
+
+            }
+
+            
+
+        }
+
+
+        
+    }
+
+}
+
+.section-restaurant {
+
+    background-color: $primary-bg-color;
+
+    &__container {
+
+        padding-top: 20px;
+        padding-bottom: 24px;
+
+    }
+
+    .card-container {
+
+        
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        .card {
+
+            width: 49%;
+
+            margin-bottom: 26px;
+
+            transition: all 0.3s;
+
+            @include mobile-only {
+
+                width: 100%;
+
+            }
+
+            &:hover {
+
+                transform: scale(1.02);
+
+            }
+
+            &__link {
+
+                text-decoration: none;
+
+            }
+            
+
+            &__image {
+
+                height: 200px;
+
+                &--new {
+
+                    background-color: $tertiary-color;
+
+                    padding: 5px 15px;
+
+                    position: absolute;
+
+                    margin-left: -130px;
+                    margin-top: 20px;
+
+                    color: lightened($tertiary-color, 25%);
+
+                    font-size: 18px;
+
+                }
+
+                img {
+                    
+                    height: 100%;
+                    width: 100%;
+
+                    object-fit: cover;
+
+                    border-radius: 20px 20px 0 0;
+
+                }
+
+            }
+
+
+            &__text {
+
+                height: 70px;
+
+                background-color: $white-color;
+                color: $black-color;
+
+                border-radius: 0 0 20px 20px;
+
+                @include box-shadow;
+
+                h3 {
+
+                    padding: 7px 0px 0px 15px;
+
+                    margin: 0;
+
+                }
+
+                p {
+
+                    padding: 5px 0px 0px 15px;
+
+                    margin: 0;
+
+                }
+
+            }
+
+        }
+
+    }
+
 }

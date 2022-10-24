@@ -1,0 +1,44 @@
+
+.heart {
+
+    margin-left: 85%;
+    
+    margin-top: -50px;
+
+    width: 0px;
+    height: 0px;
+
+    .hidden1 {
+
+        font-size: 30px;
+
+
+    }
+    
+    .hidden2 {
+
+        display: none;
+
+        font-size: 30px;
+
+    }
+    
+    &:hover {
+
+        .hidden1 {
+
+            display: none;
+
+        }
+
+        .hidden2 {
+
+            display: block;
+            color: purple;
+
+        }
+
+    }
+    
+}
+

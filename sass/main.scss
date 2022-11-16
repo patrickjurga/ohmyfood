@@ -1,17 +1,9 @@
-@import "./utils/variables";
-@import "./utils/functions";
-@import "./utils/mixins";
-@import "./utils/extensions";
+@import "./abstracts/__abstracts-dir";
 
-@import "./base/base";
-@import "./base/typography";
+@import "./base/__base-dir";
 
-@import "./pages/section";
+@import "./pages/__pages-dir";
 
-@import "./layout/header";
-@import "./layout/container";
-@import "./layout/footer";
+@import "./layout/__layout-dir";
 
-@import "./components/button";
-@import "./components/link";
-@import "./components/heart";
+@import "./components/__components-dir";

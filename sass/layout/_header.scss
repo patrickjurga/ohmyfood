@@ -5,46 +5,61 @@
     @include box-shadow;
 
     .nav {
+        
+        position: relative;
 
+        &__title {
 
-        &__link {
             @include text-align__center;
-    
-            &--logo {
-                margin-top: 0;
-                margin-bottom: 0;
-    
-                padding-top: 20px;
-                padding-bottom: 20px;
 
-                @include mobile-only {
+            margin-top: 0;
+            margin-bottom: 0;
 
-                    padding-top: 10px;
-                    padding-bottom: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
 
-                }
-    
-                img {
-                    width: 250px;
-                    vertical-align: middle;
+            @include mobile-only {
 
-                    @include mobile-only {
-
-                        width: 180px;
-    
-                    }
-
-                }  
+                padding-top: 10px;
+                padding-bottom: 10px;
 
             }
+
+            img {
+                width: 250px;
+                vertical-align: middle;
     
+                @include mobile-only {
+    
+                    width: 180px;
+    
+                }
+            }
+            
             .hidden {
                 display: none;
             }
-    
+
         }
+
+        .nav__link {
+
+            position: absolute;
+
+            margin-top: 35px;
+            margin-left: 40px;
+
+            color: $black-color;
+
+            @include mobile-only {
     
-        
+                margin-top: 25px;
+                margin-left: 25px;
+
+            }
+
+        }
+
     }
     
 }

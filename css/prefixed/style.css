@@ -207,7 +207,8 @@ body * {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.section-menu .border_under {
+.section-menu h3::after {
+  content: "";
   display: block;
   width: 55px;
   margin-top: 5px;

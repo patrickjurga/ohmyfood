@@ -361,7 +361,9 @@
 
     }
 
-    .border_under {
+    h3::after {
+
+        content: "";
 
         display: block;
 
